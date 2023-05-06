@@ -1,0 +1,18 @@
+<form method="POST" action="" novalidate>
+    {{ form.csrf_token }}
+    <div class="mb-3">
+        <label>{{ form.author.label }}</label>
+        {{ form.author(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        <label>{{ form.review_text.label }}</label>
+        {{ form.review_text(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        <label>{{ form.rating.label }}</label>
+        {{ form.rating(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.submit(class="form-control") }}
+    </div>
+</form>
